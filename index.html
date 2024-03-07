@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+    header{
+        background-color: aqua;
+        color: blue;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    header h1{
+        color: blue;
+        font-size: 50px;
+        text-align: center;
+    }
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .button{
+        height: 40px;
+        width: 120px;
+        border: none;
+        border-radius: 10px;
+        margin: 15px;
+    
+    }
+    button:hover{
+        cursor: pointer;
+        color: white;
+        background-color: greenyellow;
+    }
+    img{
+        height: 350px;
+        width: 250px;
+    }
+    section{
+        height: 100vh;
+        border: 1px solid gray;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        padding: 10px;
+        background-color: lightcyan;
+    }
+    h1{
+        font-size: 50px;
+        color:rgb(146, 130, 238);
+    }
+    *{
+        font-family: monospace;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    #submit{
+        height: 35px;
+        width: 100px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: greenyellow;
+    }
+    #submit:hover{
+        color:white;
+        background-color: blue;
+        
+    }
+    input{
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        height: 20px;
+    }
+    .image{
+        height: 10px;
+        width: 15px;
+    }
+    .footer{
+        height: 140px;
+        background-color: black;
+        color: lightgrey;
+        text-align: center;
+    }
+    .fixed{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+</style>
+    
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+    <div class="contact">
+    <h1> Welcome To My Portfolio</h1>
+</div>
+    <br>
+    <div class="contact">
+    <a href="#About">
+        <button class="button">About</button>
+    </a> 
+     <a href="#Skills">
+        <button class="button">skills</button>
+    </a>
+    <a href="#Projects">
+        <button class="button">projects</button>
+    </a> 
+     <a href="#contact">
+        <button class="button">contact</button>
+    </a>
+</div>
+</div>
+</header>
+<br>
+    <main>
+<section id="About">
+
+    <h1> Pranay Sai Anitian </h1> 
+    <img src="ME.jpg"  alt="A photo of me">
+    
+    <p> I Am A Passionate Web Developer With A Focus On Front End Technologies
+ I Am Currently Pursuing my B.Tech In <em> Anits Engineering College </em> Tagarapuvalasa ,Vizag<br>
+     <br> I Have Learnt Web Development From <strong>Code With Swaroop</strong> <br>
+    <br> You Can <strong>Click Here</strong>To Checkout What I Have Learnt In HTML,CSS,JS.</p>
+
+</section>
+<section id="Skills">
+    <h1> My Skills </h1>
+
+    <ol>
+        <li>Python Basics</li>
+        <li>HTML Basics</li>
+        <li>CSS Basics</li>
+        <li>javaScript Basics</li>
+    </ol>
+</section>
+<br>
+<section id="Projects" >
+    <h1>My Projects</h1>
+    <table border="1">
+
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+
+      <tr>
+           <td>Portfolio Website</td>
+           <td>I have built a Portfolio website by using HTML,CSS & javaScript</td>
+      </tr>
+
+      <tr>
+        <td>Python simple calculator</td>
+        <td>I have built a simple calculator in the course by code with Swaroop</td>
+      </tr>
+    </table>
+</section>
+
+<section id="contact">
+    <h1>Contact Me</h1>
+    <p> feel free to get in touch with me using the form below</p>
+   <form action="">
+    <label for="name">Name:</label>
+    <input type="text">
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email">
+    <br><br>
+    <b>choose your gender:</b>
+    <input type="radio" id="male" value="male">
+    <label for="male">male</label>
+    <input type="radio" id="female" value="female">
+    <label for="female">female</label>
+    <br><br>
+
+    <b>Select Your Intrestes:</b>
+    <input type="checkbox" id="coding" value="coding">
+    <label for="coding">coding</label>
+    <input type="checkbox" id="reading" value="reading">
+    <label for="reading">reading</label>
+    <br><br>
+    <label for="Bio">Bio (upto 200 characters):</label>
+    <input type="text">
+    <br><br>
+    <button id="submit">submit</button>
+</form>
+</section>
+</main> 
+
+ <a href="">
+
+<button id="submit" class="fixed">TOP</button>
+ </a>
+
+
+<footer class="footer">
+    <img class="image" src="https://media.istockphoto.com/id/1171091258/vector/yellow-lines-geometric-vector-logo-letter-c.jpg?s=612x612&w=0&k=20&c=4dDHKzfL45ZvQEysMQ4vr6Zlqg1PsM0reRG8TGVEs0g=" alt="">
+     <p id="flexx"> 2024 my Portfolio</p>
+</footer>
